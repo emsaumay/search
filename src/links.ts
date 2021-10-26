@@ -16,8 +16,8 @@ const SITES: Record<string, string | ((query: string) => string) | undefined> = 
 
 	// Programming
 	git: 'https://github.com/search?q={q}',
-	github: 'https://github.com/{q}',
-	stackoverflow: 'https://stackoverflow.com/search?q={q}',
+	gh: 'https://github.com/{q}',
+	so: 'https://stackoverflow.com/search?q={q}',
 	codepen: 'https://codepen.io/search/pens?q={q}',
 	discordpy: 'https://discordpy.readthedocs.io/en/latest/search.html?q={q}',
 	dpy: 'https://discordpy.readthedocs.io/en/latest/search.html?q={q}',
@@ -59,11 +59,11 @@ const SITES: Record<string, string | ((query: string) => string) | undefined> = 
 	fandango: 'https://www.fandango.com/search?q={q}',
 
 	// Social
-	twitter: 'https://twitter.com/search?q={q}&src=typed_query',
+	tt: 'https://twitter.com/search?q={q}&src=typed_query',
 	fb: 'https://www.facebook.com/search/top/?q={q}',
 	giggl: 'https://canary.giggl.app/portal/{q}',
 	subso: 'https://sub.so/{q}',
-	reddit: 'https://www.reddit.com/search/?q={q}',
+	red: 'https://www.reddit.com/search/?q={q}',
 	'r/': 'https://www.reddit.com/r/{q}',
 	'u/': 'https://www.reddit.com/u/{q}',
 	pinterest: 'https://www.pinterest.com/search/pins/?q={q}&rs=direct_navigation',
@@ -78,7 +78,7 @@ const SITES: Record<string, string | ((query: string) => string) | undefined> = 
 	odysee: 'https://odysee.com/search?q={q}',
 	yt: 'https://www.youtube.com/results?search_query={q}&page={startPage?}&utm_source=opensearch',
 	gyazo: 'https://gyazo.com/search/{q}',
-	twitch: 'https://www.twitch.tv/{q}',
+	tw: 'https://www.twitch.tv/{q}',
 	netflix: 'https://www.netflix.com/search?q={q}',
 	pornhub: 'https://www.pornhub.com/video/search?search={q}',
 	
@@ -98,7 +98,7 @@ const SITES: Record<string, string | ((query: string) => string) | undefined> = 
 	amazonbr: 'https://www.amazon.com.br/s?k={q}',
 	amazonau: 'https://www.amazon.com.au/s?k={q}',
 	amazonjp: 'https://www.amazon.co.jp/s?k={q}',
-	amazonin: 'https://www.amazon.co.in/s?k={q}',
+	am: 'https://www.amazon.co.in/s?k={q}',
 
 	// Anime
 	anilist: 'https://anilist.co/search/anime?search={q}',
@@ -119,7 +119,7 @@ const SITES: Record<string, string | ((query: string) => string) | undefined> = 
 	imp: 'https://impb.in/p/{q}',
 	imperial: 'https://imperialb.in/p/{p}',
 	urban: 'https://www.urbandictionary.com/define.php?term={q}',
-	gdrive: 'https://drive.google.com/drive/search?q={q}',
+	gd: 'https://drive.google.com/drive/search?q={q}',
 	producthunt: 'https://www.producthunt.com/search?q={q}',
 	linkedin: 'https://www.linkedin.com/search/results/all/?keywords={q}&origin=GLOBAL_SEARCH_HEADER&sid=*Xz',
 	lnkdn: 'https://www.linkedin.com/search/results/all/?keywords={q}&origin=GLOBAL_SEARCH_HEADER&sid=*Xz',

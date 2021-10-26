@@ -5,9 +5,9 @@ function handleRequest(request: Request) {
 	const query = url.searchParams.get('q') ?? '';
 	const engine = (url.searchParams.get('engine') ?? SITES.google) as string;
 
-	if (query.startsWith('!')) {
+	if (query.startsWith('.')) {
 		const split = query.split(' ');
-		const site = SITES[split[0].toLowerCase().replace('!', '')];
+		const site = SITES[split[0].toLowerCase().replace('.', '')];
 
 		if (site) {
 			const [, ...rest] = split;
